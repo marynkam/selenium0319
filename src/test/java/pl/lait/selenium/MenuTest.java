@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+@Ignore
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class MenuTest {
 //żeby test mógł się uruchomić musi być fraza "@Test"

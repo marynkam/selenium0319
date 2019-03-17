@@ -13,9 +13,15 @@ public class Init {
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
 		
-		driver = new ChromeDriver();
-		driver.get("http://www.newtours.demoaut.com/");
-		return driver;
+		if(driver ==null) {
+			driver = new ChromeDriver();
+			driver.get("http://newtours.demoaut.com/");
+			return driver;
+		}else {
+			return driver;
+			
+		}
+		
 	}
 	
 	//dzięki temu w wynikach testów możemy zobaczyć w jakiej części testu mamy np bład 
@@ -26,6 +32,7 @@ public class Init {
 	
 	public static void close() {
 		driver.close();
+		driver = null;
 		
 	}
 	// wstrzymanie przechodzenia do kolejnmych testów o określoną ilość czasu 
