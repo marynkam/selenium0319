@@ -2,6 +2,7 @@ package pl.lait.selenium;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 
@@ -9,10 +10,11 @@ import pl.lait.pageObjects.LoginPage;
 import pl.lait.pageObjects.ReservationPage;
 import pl.lait.pageObjects.ReservationPage2;
 
+@Ignore
 public class LoginTest {
 	
-	WebDriver driver; 
 	
+	WebDriver driver; 
 	@Before
 	public void bifor() {
 		driver = Init.getDriver();
