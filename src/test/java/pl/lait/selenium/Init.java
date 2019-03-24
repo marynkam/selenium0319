@@ -55,6 +55,7 @@ public class Init {
 	
 	public static void close() {
 		driver.close();
+		driver.quit();
 		driver = null;
 		
 	}
